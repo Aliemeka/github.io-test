@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeka Allison</title>
+    <style>
+        *{
+            margin:  0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+        header{
+            width: 100%;
+            padding:  20px;
+        }
+        header > h1{
+            margin: 10px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        header hr{
+            border-color: rgba(100, 100, 100, 0.3);
+        }
+        main{
+            display: block;
+            padding: 2rem 1.5rem;
+        }
+        main > section{
+            margin-bottom: 40px;
+        }
+        main > section#image-section{
+            width: 100%;
+            border-radius:  4px;
+            overflow: hidden;
+        }
+        main > section#image-section >img{
+            width: 100%;
+            height: auto;
+        }
+        main > section#info{
+            width: 100%;
+            padding: 15px;
+            border: 1px #333333 solid;
+            border-radius: 4px;
+            background-color: whitesmoke;
+            box-shadow: #999999 4px 4px 8px;
+        }
+        main > section#info h2{
+            margin: 10px;
+            text-align: center;
+        }
+        main > section#info >p{
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        main > section#info >div{
+            width: 150px;
+            margin: 20px auto;
+        }
+        main > section#info a{
+            width: 100%;
+        }
+        main > section#info button{
+            width: 100%;
+            height: 50px;
+            border: 0;
+            border-radius: 5px;
+            background-color: coral;
+            font-weight: 600;
+            font-size: 12pt;
+            transition-duration: 500ms;
+        }
+        main > section#info button:hover{
+            cursor: pointer;
+            color: white;
+            box-shadow: rgb(231, 195, 182) 4px 8px 11px;
+        }
+        footer{
+            margin: -30px 50px 20px 50px;
+            padding: 20px;
+            background-color: #333333;
+        }
+        footer  p{
+            text-align: center;
+            color: whitesmoke;
+            font-size: 11pt;
+        }
+        /* Media Queries */
+        @media(min-width: 768px){
+            header{
+                height: 15vh;
+                background-color: #ffffff;
+            }
+            header > h1{
+                text-align: left;
+            }
+            main{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+            }
+            main > section#image-section{
+                width: 50%;
+            }
+            main > section#info{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emeka Allison</h1>
+        <hr/>
+    </header>
+    <main>
+        <section id="image-section">
+            <img src="me.jpg" alt="my profile photo"
+                title="Emeka"
+            >
+        </section>
+        <section id="info">
+            <h2>A Little Bit About Myself</h2>
+            <p>Hey there! My name is <b>Chukwuemeka 
+                Allison</b> but you can call me <i>Emeka</i>.
+                I love solving problems and finding new opportunities to help
+                people.
+            </p>
+            <p>I enjoy intellectual discussions and problem solving. I love it when
+                I work on solutions with like minded people.
+            </p>
+            <div>
+                <a href="mailto:emekaallison4@gmail.com" subject="Hey! I will like to
+                know you">
+                    <button>
+                        Get in touch
+                    </button>
+            </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Emeka Allison Copyright &copy; 2020 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
